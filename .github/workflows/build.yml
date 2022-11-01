@@ -1,0 +1,29 @@
+name: Docker
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: setup JS env
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build JS app
+      run: npm run build
+
+    - name: Build the Docker image
+      run: docker build . --tag divdash-web:$(date +%s)
