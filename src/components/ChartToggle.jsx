@@ -1,6 +1,5 @@
-import ReactECharts from 'echarts-for-react';
-import React, { useEffect, useState } from 'react';
-import { BarChartIcon, CrossIcon, PieChartIcon, PortfolioIcon } from '../icons/Icons';
+import React, { useState } from 'react';
+import { BarChartIcon, PortfolioIcon } from '../icons/Icons';
 import ButtonIcon from './ButtonIcon';
 import Chart from './Chart';
 import ChartPie from './ChartPie';

@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
-import ButtonIcon from './ButtonIcon';
-import { DashboardIcon, LogOutIcon, PortfolioIcon, TransactionIcon, InstrumentIcon, LogoIcon, UploadIcon, MenuIcon, CrossIcon } from '../icons/Icons'
+import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { CrossIcon, DashboardIcon, InstrumentIcon, LogOutIcon, MenuIcon, PortfolioIcon, TransactionIcon, UploadIcon } from '../icons/Icons';
 import Button from './Button';
+import ButtonIcon from './ButtonIcon';
 
 function ChartToggle({ className }) {
     const [showMenu, setShowMenu] = useState(false);

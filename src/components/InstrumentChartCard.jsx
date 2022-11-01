@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import Card from '../components/Card';
 import Chart from '../components/Chart';
-import { useNavigate } from "react-router-dom";
 import { first_date, last_date } from '../utils/util';
 
 

@@ -1,6 +1,4 @@
-import Card from './Card'
-import { formatNumberNoFractions } from '../utils/util'
-import NoData from './NoData';
+import { formatNumberNoFractions } from '../utils/util';
 
 function CardSingleNumber({ title, amount, currency, className }) {
   if (amount === undefined || amount === null) {

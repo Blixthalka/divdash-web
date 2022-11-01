@@ -1,8 +1,6 @@
 import ReactECharts from 'echarts-for-react';
 import React, { useEffect, useState } from 'react';
 import Card from '../components/Card';
-import NoData from './NoData';
-import { graphic } from 'echarts'
 
 
 function AccumCard({ className }) {

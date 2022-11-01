@@ -1,9 +1,5 @@
-import React, { Children } from 'react';
-import { useEffect } from 'react';
-import { useCallback } from 'react';
-import { useState } from 'react';
-import { createContext } from 'react';
-import { CheckIcon, CrossIcon} from '../icons/Icons';
+import React, { createContext, useCallback, useEffect, useState } from 'react';
+import { CheckIcon, CrossIcon } from '../icons/Icons';
 
 const ToastContext = createContext()
 

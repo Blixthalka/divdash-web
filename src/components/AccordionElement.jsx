@@ -1,5 +1,4 @@
-import React, { useState, useContext } from 'react';
-import Card from '../components/Card';
+import React, { useState } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from '../icons/Icons';
 
 

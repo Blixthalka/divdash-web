@@ -1,5 +1,4 @@
-import React, {forwardRef} from 'react';
-import Card from '../components/Card';
+import React from 'react';
 
 const ButtonIcon = ({Icon, className, onClick, disabled = false}) => {
     return (

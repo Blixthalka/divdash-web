@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import './Table.css';
-import { ChevronDownIcon, ChevronUpIcon, ArrowRightIcon } from '../icons/Icons';
+import React, { useState } from 'react';
+import { ChevronDownIcon, ChevronUpIcon } from '../icons/Icons';
 import Button from './Button';
-import ButtonIcon from './ButtonIcon';
+import './Table.css';
 
 function Table({ headers, sorting, onSortChange, dataList, className, sortable = true, selectable = false }) {
     const [selected, setSelected] = useState([])

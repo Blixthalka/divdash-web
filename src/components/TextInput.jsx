@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 
 function TextInput({ type = "text", value, setFunction, placeholder, label, onKeyDown }) {

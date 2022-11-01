@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState, createContext } from 'react';
-import { NavLink, Outlet } from "react-router-dom";
-import { DashboardIcon, PortfolioIcon, TransactionIcon, InstrumentIcon, LogoIcon, UploadIcon, MenuIcon, CrossIcon } from './icons/Icons'
+import React, { useState, createContext } from 'react';
+import { Outlet } from "react-router-dom";
 import './app.css'
 import { ToastContextProvider } from './components/ToastContex'
 

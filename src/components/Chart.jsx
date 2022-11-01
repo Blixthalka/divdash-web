@@ -1,7 +1,5 @@
 import ReactECharts from 'echarts-for-react';
-import React, { useEffect, useState } from 'react';
-import NoData from './NoData';
-import { graphic } from 'echarts'
+import React from 'react';
 
 function Chart({ data, onBarClick }) {
     if (!data || data.length === 0) {

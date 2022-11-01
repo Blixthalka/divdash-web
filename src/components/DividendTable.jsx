@@ -1,9 +1,8 @@
-import { number } from 'echarts';
-import React, { useState, useEffect } from 'react';
-import { first_date, last_date } from '../utils/util'
-import Table from '../components/Table'
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Table from '../components/Table';
+import { first_date, last_date } from '../utils/util';
 import { get } from '../utils/web';
-import { useNavigate } from 'react-router-dom'
 
 function DividendTable({ sorting, setSorting, search, className, sortable = true, maxDividends = 0, year }) {
     const [transactions, setTransactions] = useState([]);
