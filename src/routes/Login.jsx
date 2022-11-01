@@ -1,13 +1,9 @@
-import React from 'react';
-import { useState, useContext } from 'react';
+import React, { useContext, useState } from 'react';
+import Button from '../components/Button';
 import Card from '../components/Card';
 import TextInput from '../components/TextInput';
-import { ChevronLeftIcon, PortfolioIcon, ArrowLeftIcon, ArrowRightIcon } from '../icons/Icons';
-import Button from '../components/Button'
-import ButtonIcon from '../components/ButtonIcon'
-import { clear } from '@testing-library/user-event/dist/clear';
+import { ArrowLeftIcon, ArrowRightIcon, PortfolioIcon } from '../icons/Icons';
 
-import { Navigate } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import { AppContext } from '../App';
 

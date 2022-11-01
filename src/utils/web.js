@@ -11,9 +11,9 @@ const request = (url, method, navigate, query_params) => {
   return fetch(url + queryString, {
     method: method
   }).then(response => {
-    if (response.status == 200 | response.status == 201) {
+    if (response.status === 200 | response.status === 201) {
       return response.json()
-    } else if (response.status == 401) {
+    } else if (response.status === 401) {
       navigate("/login")
       throw new Error("unathorized");
     }

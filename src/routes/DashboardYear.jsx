@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { Link, useParams } from "react-router-dom";
+import ButtonIcon from '../components/ButtonIcon';
+import Card from '../components/Card';
 import CardSingleNumber from '../components/CardSingleNumber';
 import DividendMonthCard from '../components/DividendMonthCard';
 import DividendTable from '../components/DividendTable';
 import InstrumentChartCard from '../components/InstrumentChartCard';
-import Card from '../components/Card'
-import ButtonIcon from '../components/ButtonIcon'
-import { Link, useParams } from "react-router-dom";
-import { ChevronRightIcon, ChevronLeftIcon, CrossIcon } from '../icons/Icons';
-import { useContext } from 'react';
-import { AppContext } from '../App'
+import { ChevronLeftIcon, ChevronRightIcon, CrossIcon } from '../icons/Icons';
 
 function DashboardYear() {
     const [data, setData] = useState(null);

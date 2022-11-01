@@ -24,7 +24,7 @@ export const ToastContextProvider = ({ children }) => {
                 type: type
             }
             setToasts([...toasts, toast])
-        }, [setToasts])
+        }, [setToasts, toasts])
 
 
     return (

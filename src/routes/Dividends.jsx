@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import Card from '../components/Card'
-import Table from '../components/Table'
-import DividendTable from '../components/DividendTable'
-import { ChevronDownIcon, ChevronUpIcon } from '../icons/Icons';
+import React, { useState } from 'react';
+import Card from '../components/Card';
+import DividendTable from '../components/DividendTable';
 import TextInput from '../components/TextInput';
 
 function Dividends() {

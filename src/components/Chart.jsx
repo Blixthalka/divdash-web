@@ -6,14 +6,6 @@ function Chart({ data, onBarClick }) {
         return (<></>)
     }
 
-    const colors = [
-        ['#334155', 'bg-chart-2 hover:bg-chart-2-s text-white fill-white'],
-        ['#FCD757', 'bg-chart-1 hover:bg-chart-1-s text-black fill-black'],
-        ['#E94F37', 'bg-chart-4 hover:bg-chart-4-s text-white fill-white'],
-        ['#393E41', 'bg-chart-5 hover:bg-chart-5-s text-white fill-white'],
-        ['#C9B6BE', 'bg-chart-3 hover:bg-chart-3-s text-black fill-black'],
-    ]
-
     let option = {
         textStyle: {
             color: '#94a3b8',

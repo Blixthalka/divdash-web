@@ -43,7 +43,7 @@ function DividendYearCard({isin, className}) {
             .then(i => {
                 setYears(fillData(i))
             })
-    }, [])
+    }, [isin])
 
     if(years === undefined || years === []) {
         return (<></>)

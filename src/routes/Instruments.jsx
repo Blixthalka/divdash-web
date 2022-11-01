@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Card from '../components/Card'
-import Table from '../components/Table'
-import Chart from '../components/Chart'
-import { Link } from "react-router-dom";
-import InstrumentCard from "../components/InstrumentCard";
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import Card from '../components/Card';
+import Chart from '../components/Chart';
+import Table from '../components/Table';
 
 const Intruments = () => {
     const [instruments, setInstruments] = useState([]);

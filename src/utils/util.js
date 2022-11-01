@@ -40,7 +40,7 @@ export const getFormattedMonth = (num) => {
 }
 
 export const formatNumber = (num) => {
-  return num ?.toLocaleString(undefined, { minimumFractionDigits: 2 })
+  return num?.toLocaleString(undefined, { minimumFractionDigits: 2 })
 }
 
 export const formatNumberNoFractions = (num) => {

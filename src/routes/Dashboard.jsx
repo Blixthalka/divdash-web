@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import CardSingleNumber from '../components/CardSingleNumber';
-import DividendMonthCard from '../components/DividendMonthCard';
-import DividendYearCard from '../components/DividendYearCard';
+import AccumCard from '../components/AccumCard';
 import Card from '../components/Card';
+import CardSingleNumber from '../components/CardSingleNumber';
 import DividendTable from '../components/DividendTable';
+import DividendYearCard from '../components/DividendYearCard';
 import InstrumentChartCard from '../components/InstrumentChartCard';
-import AccumCard from '../components/AccumCard'
 
 function Dashboard() {
   const [data, setData] = useState(null);

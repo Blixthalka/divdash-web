@@ -1,13 +1,8 @@
-import React from 'react';
-import { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
-import AccordionElement from '../components/AccordionElement';
+import React, { useContext, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import Card from '../components/Card';
-import ToastContext from '../components/ToastContex';
-import avanza from '../images/avanza.png';
-import nordnet from '../images/nordnet.png';
-import { useParams } from "react-router-dom";
 import NoData from '../components/NoData';
+import ToastContext from '../components/ToastContex';
 
 const UploadTag = () => {
     const [uploading, setUploading] = useState(false);

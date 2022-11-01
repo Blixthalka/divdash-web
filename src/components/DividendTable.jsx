@@ -46,13 +46,13 @@ function DividendTable({ sorting, setSorting, search, className, sortable = true
 
         get(`/api/dividends`, navigate, query)
             .then(resp => {
-                if (maxDividends != 0) {
+                if (maxDividends !== 0) {
                     setTransactions(resp.slice(0, maxDividends))
                 } else {
                     setTransactions(resp)
                 }
             })
-    }, [sorting, search, year])
+    }, [sorting, search, year, maxDividends, navigate])
 
     const data = transactions.map(d => {
         if (d.isin) {

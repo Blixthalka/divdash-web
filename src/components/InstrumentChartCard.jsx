@@ -12,7 +12,7 @@ const IntrumentChartCard = ({ year, className }) => {
 
     useEffect(() => {
         let url = null;
-        if (year != undefined) {
+        if (year !== undefined) {
             url = `/api/instruments/?from_date=${first_date(year)}&to_date=${last_date(year)}`
         } else {
             url = "/api/instruments"

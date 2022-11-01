@@ -1,9 +1,5 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Button from '../components/Button';
-import Card from '../components/Card';
-import avanza from '../images/avanza.png';
-import nordnet from '../images/nordnet.png';
 
 const NotFound = () => {
     const navigate = useNavigate()

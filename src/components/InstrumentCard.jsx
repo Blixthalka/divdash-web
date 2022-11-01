@@ -30,7 +30,7 @@ const IntrumentCard = ({ numberOfInstruments, year }) => {
 
     useEffect(() => {
         let url = null;
-        if (year != undefined) {
+        if (year !== undefined) {
             url = `/api/instruments/?year=${year}`
         } else {
             url = "/api/instruments"
@@ -45,7 +45,7 @@ const IntrumentCard = ({ numberOfInstruments, year }) => {
                     setInstruments(i.slice(0, numberOfInstruments))
                 }
             })
-    }, [year, sorting])
+    }, [year, sorting, numberOfInstruments])
 
     return (
         <Card title={numberOfInstruments === 0 ? "Instruments" : "Best Instruments"} className="grid gap-2 ">

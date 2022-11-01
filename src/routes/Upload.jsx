@@ -38,7 +38,7 @@ const Upload = () => {
                             }}
                         >
                             {bank.coming_soon && <p className="place-self-center text-secondary">coming soon</p>}
-                            <img src={bank.image} className="p-2 backdrop-grayscale" disabled={bank.coming_soon} />
+                            <img src={bank.image} className="p-2 backdrop-grayscale" disabled={bank.coming_soon} alt={bank.tag} />
                         </button>
 
 
