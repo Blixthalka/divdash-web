@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  web:
+    image: "divdash-web"
+    ports:
+      - "80:80"
+    depends_on:
+      - core
+  core:
+    image: "divdash-core"
+    expose:
+      - "8082"
+    volumes:
+      - "/Users/emil/prog/dividend/divdash/mnesia:/divdash/mnesia"
