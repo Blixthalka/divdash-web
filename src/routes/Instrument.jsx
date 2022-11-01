@@ -18,7 +18,7 @@ function Instrument() {
         fetch(`/api/instruments/${params.isin}`)
         .then(i => i.json())
         .then(i => setInstrument(i))
-    }, [])
+    }, [params.isin])
 
     if (!instrument) {
         return (
