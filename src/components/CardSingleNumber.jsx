@@ -6,7 +6,7 @@ function CardSingleNumber({ title, amount, currency, className }) {
   }
 
   return (
-    <div className={` bg-primary rounded-lg p-5 ${className}`}>
+    <div className={` bg-primary rounded p-5 ${className}`}>
       {title &&
         <div className="flex justify-between">
           <p className="text-white text-sm">{title}</p>
